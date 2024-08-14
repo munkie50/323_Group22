@@ -11,7 +11,7 @@ Head to extensions tab on VSCode.
 Search and install 'Git Pull Requests' Extension  
 
 ## Step 3: Clone Repo  
-Run **git clone (https://github.com/munkie50/323_Group22.git)** command in the directory of your choice.  
+Run **git clone https://github.com/munkie50/323_Group22.git** command in the directory of your choice.  
 Log into Github when prompted.  
 
 # How to Use
