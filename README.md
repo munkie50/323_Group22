@@ -1,4 +1,4 @@
-# CSCI316-Project-Task-2
+# CSCI322 Group Project
 
 # Installation Instructions
 
