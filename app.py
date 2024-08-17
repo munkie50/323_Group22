@@ -27,7 +27,7 @@ def predict():
     prediction = model.predict(transformed_input)[0]
     
     # Map the prediction to a sentiment label
-    sentiment_map = {0: "negative", 1: "neutral", 2: "positive"}
+    sentiment_map = {0: "Negative", 1: "Neutral", 2: "Positive"}
     sentiment = sentiment_map[prediction]
     
     # Return the result
