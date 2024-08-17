@@ -63,3 +63,5 @@ git push origin <new-branch-name> (Push new branch from local machine to main)
 git commit -m (To commit changes to current branch, and include a message)  
 
 git push (To push changes to the main repo)
+
+git restore fileName (restore main version of file and discard changes)
