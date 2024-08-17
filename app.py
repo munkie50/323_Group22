@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import joblib
+import emoji
 
 app = Flask(__name__)
 
@@ -15,6 +16,9 @@ def home():
 def predict():
     # Get the input from the form
     user_input = request.form['user_input']
+
+    # Convert emojis to text
+    user_input = emoji.demojize(user_input)
     
     # Transform the input data using the loaded vectorizer
     transformed_input = vectorizer.transform([user_input])
