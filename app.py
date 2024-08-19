@@ -1,8 +1,14 @@
 from flask import Flask, request, jsonify, render_template
 import joblib
 import emoji
+import re
 
 app = Flask(__name__)
+
+def custom_tokenizer(text):
+    # This regex pattern will match words and emojis
+    pattern = r'\w+|[^\w\s]'
+    return re.findall(pattern, text)
 
 # Load the saved model and vectorizer
 model = joblib.load('naive_bayes_model.pkl')
